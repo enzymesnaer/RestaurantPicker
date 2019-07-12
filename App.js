@@ -1,5 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Constants } from "expo";
+import { Image, Platform } from "react-native";
+import { TabNavigator } from "react-navigation";
+import { PeopleScreen } from "./screens/PeopleScreen";
+import { DecisionScreen } from "./screens/DecisionScreen";
+import { RestaurantsScreen } from "./screens/RestaurantsScreen";
+
 
 export default function App() {
   return (
@@ -8,7 +15,6 @@ export default function App() {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
